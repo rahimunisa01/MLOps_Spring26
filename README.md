@@ -9,7 +9,7 @@ making sure tests run automatically whenever code is pushed to GitHub.
 
 
 #Project structure
-
+```
 MLOps_Spring26/
 ├── src/
 │   └── calculator.py
@@ -21,6 +21,7 @@ MLOps_Spring26/
 │   └── unittest_action.yml
 ├── requirements.txt
 └── README.md
+```
 
 #Calculator functions
 The calculator.py file includes four functions:
