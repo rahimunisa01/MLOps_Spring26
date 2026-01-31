@@ -1,2 +1,14 @@
 lab_01
 
+#python cache
+__pycache__/
+*.pyc
+
+#macos
+.DS_Store
+
+#Virtual environments
+
+venv/
+.env/
+
