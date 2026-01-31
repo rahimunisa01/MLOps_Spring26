@@ -24,10 +24,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Pytest and generate report
-          env:
-            PYTHONPATH: ${{ github.workspace }}
-          run: |
-            python -m pytest --junitxml=pytest-report.xml
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python -m pytest --junitxml=pytest-report.xml
 
       - name: Upload Pytest results
         uses: actions/upload-artifact@v2
@@ -37,9 +37,10 @@ jobs:
 
       - name: Notify on success
         if: success()
-        run: echo "Pytest tests passed successfully"
+        run: echo "✅ Pytest tests passed successfully"
 
       - name: Notify on failure
         if: failure()
-        run: echo "Pytest tests failed"
+        run: echo "❌ Pytest tests failed"
+
 
